@@ -2,15 +2,9 @@
 
 A very simple demonstration of long-polling with AJAX (jQuery) and PHP. Long-polling makes near "real-time"
 applications possible. The client does not request new data every X seconds/minutes, the client gets new data
-delivered when there is new data (push-notification style). This is an improved, cleaned and documented
-fork of https://github.com/lincolnbrito/php-ajax-long-polling ! Big thanks, man.
+delivered when there is new data (push-notification style). This is a fork of https://github.com/panique/php-long-polling
 
 ## What is long-polling (and short polling) ?
-
-#### Short-polling
-
-Send a request to the server, get an instant answer. Do this every x seconds, minutes etc. to keep your application
-up-to-date. But: This costs a lot of requests.
 
 #### Long-polling
 
@@ -34,10 +28,3 @@ This would work perfectly in a real-world application, BUT
 
 1. There are better tools for this, like node.js, which can handle MUCH more concurrent connections and serve
 data faster, with much less memory usage and afaik while using only ONE thread.
-
-2. Apache2 uses 18MB afaik per thread by default, so having a "permanent connection" with 100 clients will use a lot
-of memory. I'm currently experimenting with lighttpd, NGINX and appserver.io to find a better solution.
-
-## You like that ?
-
-:) Then have a look at my blog [DEV METAL](http://www.dev-metal.com), at [my other repos](https://github.com/panique), [donate two dollars for a big coffee](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=P5YLUK4MW3LDG) or [Flattr the project](https://flattr.com/submit/auto?user_id=panique&url=https%3A%2F%2Fgithub.com%2Fpanique%2Fphp-long-polling). Thanks!
